@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Day-3</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    nav {
+        padding: 20px;
+        background-color: cornflowerblue;
+    }
+    nav a {
+        padding: 5px;
+        text-decoration: none;
+    }
+    section {
+        background-image: url('img/paper.gif');
+        height: 600px;
+    }
+    section .service-info {
+        height: 300px;
+        padding: 20px;
+    }
+    section .service-info .service-details {
+        float: left;
+        width: 50%;
+    }
+    .service-details .service-title {
+        width: 50%;
+        float: right;
+        padding: 10px 40px 10px 10px;
+        text-align: left;
+    }
+    .service-details .service-title h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    section .service-info .service-img {
+        float: right;
+        width: 50%;
+    }
+    .service-img img{
+        width: auto;
+        height: 300px;
+        padding: 10px 0px 10px 10px;
+    }
+    footer {
+        padding: 10px;
+        background-color:lightslategray;
+    }
+</style>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="service-info">
+            <div class="service-details">
+                <div class="service-title">
+                    <h1>01 /</h1>
+                    <h2>Web Design & Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad ab quibusdam sunt illum corrupti dolore nesciunt voluptas vero aliquid culpa recusandae quo nam, sequi, aperiam voluptates? Doloribus odio molestias ipsum.</p>
+                </div>
+            </div>
+            <div class="service-img">
+                <img src="./img/webdesign.png" alt="service Image">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Rafikul Islam Rafi</p>
+    </footer>
+</body>
+</html>
