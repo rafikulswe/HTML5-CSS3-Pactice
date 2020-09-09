@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-content{
+    background-color: lightgrey;
+    border: 10px solid green;
+    width: 400px;
+    padding: 30px;
+    margin: 20px auto;
+}
+.outline-content{
+    background-color: lightgrey;
+    border: 1px solid black;
+    width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    outline: 9px double green; /* width style color */
+    outline-offset: 5px;
+    
+}
