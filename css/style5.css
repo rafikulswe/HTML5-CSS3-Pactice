@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.para p{
+    text-align: justify;
+    color: green;
+    padding: 10px 10px;
+    text-indent: 50px;
+}
+.para h2{
+    text-shadow: 2px 10px 2px gray; /* 3=opacity */
+}
+span{
+    text-transform: capitalize;
+    color: red;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
