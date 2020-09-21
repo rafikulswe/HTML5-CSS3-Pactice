@@ -73,6 +73,23 @@
             opacity: 1;
             visibility: visible;
         }
+
+        /* Transition */
+        .transition{
+            border: 1px solid green;
+            height: 300px;
+            width: 300px;
+            background-color: salmon;
+            /* transition-property: background-color, width;
+            transition-duration: 2s; */
+            /* transition: background-color, width, 2s; */
+            transition: all, 2s;
+        }
+        .transition:hover{
+            background-color: red;
+            width: 600px;
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +114,10 @@
                 <h2>Rafikul Islam Rafi</h2>
             </div>
         </div>
+    </div>
+
+    <div class="transition">
+
     </div>
 </body>
 </html>
