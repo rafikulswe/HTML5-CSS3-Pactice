@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position Relative vs Absolute</title>
+    <title>Position sticky, Relative vs Absolute, transition</title>
     <style>
         h1{
             text-align: center;
@@ -64,7 +64,7 @@
             top: 0px;
             left: 0px;
             opacity: 0;
-            transition: .5s;
+            transition: height, .5s;
             visibility: hidden;
         }
         .effect-div:hover .effect-div-inner{
@@ -72,6 +72,14 @@
             width: 100%;
             opacity: 1;
             visibility: visible;
+        }
+
+        /* sticky */
+        .sticky-div .sticky{
+            position: sticky;
+            top: 0px;
+            background-color: green;
+            border: 2px solid #4CAF50;
         }
 
         /* Transition */
@@ -93,6 +101,13 @@
     </style>
 </head>
 <body>
+    <h1>Sticky</h1>
+    <div class="sticky-div">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel possimus ad id debitis repudiandae consequatur unde, a ipsa et tenetur consectetur rerum. Quae quasi soluta, distinctio libero ducimus assumenda vitae commodi similique iusto dolores, vel ea. Et rerum aliquam totam, aperiam numquam temporibus dolor blanditiis, molestiae obcaecati eius nihil distinctio nesciunt. Velit architecto quaerat quidem itaque debitis accusamus placeat voluptates iste eum. Autem, expedita magni. Rerum quod dolorum debitis aut, dicta voluptate fugiat possimus aperiam odio fugit eveniet nihil, laudantium rem dignissimos tempore quo similique? Temporibus et autem recusandae? Assumenda commodi, tempore ipsum autem libero facere deserunt saepe quas nisi optio hic, quidem illo totam doloremque? Temporibus quos facere velit porro enim. Perferendis quo, tenetur distinctio fugiat neque necessitatibus officia possimus molestias quaerat praesentium voluptates dolores delectus culpa exercitationem explicabo esse odit accusantium laborum enim, laboriosam suscipit? Ullam laudantium reiciendis accusamus voluptatibus perspiciatis eligendi quaerat delectus, vitae omnis possimus quae saepe amet ea atque sit, inventore alias vel nihil! Reprehenderit distinctio illum minus dolores neque obcaecati pariatur et adipisci nesciunt quod. Nulla, assumenda. Recusandae aliquam quaerat porro laudantium ipsum provident tempora. Quia nulla suscipit vel libero sapiente velit cum sed quisquam. Perferendis eaque placeat, magni quae neque ea temporibus nemo!
+        </p>
+        <p class="sticky">This is Sticky example heading (it's based on the user's scroll position).</p>
+        <p style="height: 200px;"></p>
+    </div>
     <h1>Position Relative vs Absolute</h1>
     <div class="parentdiv">
         <div class="inner-one">
@@ -116,6 +131,7 @@
         </div>
     </div>
 
+    <h1>Transition</h1>
     <div class="transition">
 
     </div>
