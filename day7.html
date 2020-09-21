@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position Relative vs Absolute</title>
     <style>
+        h1{
+            text-align: center;
+        }
         .parentdiv{
             height: 200px;
             width: 800px;
@@ -35,9 +38,45 @@
             background-color: black;
             display: inline-block;
         }
+
+        .effect-main{
+            height: 300px;
+            width: 800px;
+            margin: 50px auto;
+            padding: 5px;
+            border: 1px solid red;
+        }
+        .effect-div{
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .effect-div img{
+            height: 100%;
+            max-width: 100%;
+        }
+        .effect-div-inner{
+            width: 0;
+            height: 0;
+            text-align: center;
+            background: rgba(156, 184, 236, .5);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: .5s;
+            visibility: hidden;
+        }
+        .effect-div:hover .effect-div-inner{
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
 </head>
 <body>
+    <h1>Position Relative vs Absolute</h1>
     <div class="parentdiv">
         <div class="inner-one">
             
@@ -47,6 +86,16 @@
         </div>
         <div class="inner-three">
             
+        </div>
+    </div>
+
+    <div class="effect-main">
+        <div class="effect-div">
+            <img src="img/webdesign.png" alt="">
+            <div class="effect-div-inner">
+                <span>This is</span>
+                <h2>Rafikul Islam Rafi</h2>
+            </div>
         </div>
     </div>
 </body>
