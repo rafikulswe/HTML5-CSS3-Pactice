@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border Image</title>
     <style>
-        p{
+        .border-img p{
             border: 100px solid transparent;
             border-image: url(img/frame-border.png) 150 round;
+        }
+        .attr-function p:hover::after{
+            content: attr(data-caption);
+            border: 1px solid gray;
+            background-color: lightblue;
         }
     </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat ex.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat ex</p>
+    <div class="border-img">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat ex.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat exLorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel incidunt atque at explicabo! Reprehenderit ea vitae tenetur quia animi fugit? Ratione inventore atque aliquam quae consectetur quaerat, fugiat ex</p>
+    </div>
+    <div class="attr-function">
+        <p data-caption="my name is Rafi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet suscipit nulla culpa, voluptate blanditiis animi</p>
+    </div>
 </body>
 </html>
