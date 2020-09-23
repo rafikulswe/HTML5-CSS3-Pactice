@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+</head>
+<style>
+    /* input[type='text']{} */
+    input[name='text']{
+        border: 1px solid red;
+    }
+    /* .nth-slector p:nth-child(odd){} */
+    /* .nth-slector p:nth-child(3){} */
+    .nth-slector p:nth-child(2n){
+        color: indigo;
+    }
+    /* pseudo selector/element */
+    .ba-selector p:hover::before{
+        content: 'sobuj';
+        border: 1px solid red;
+        background-color: royalblue;
+        padding: 2px;
+        margin: 2px;
+
+    }
+    .ba-selector p::after{
+        content: 'End';
+        border: 1px solid red;
+        background-color: royalblue;
+        padding: 2px;
+        margin: 2px;
+    }
+    .selection-selector p::selection{
+        background-color: saddlebrown;
+        color: white;
+    }
+    .first-letter-sel p::first-letter{
+        color: yellowgreen;
+        font-size: 24px;
+
+    }
+    .first-line-sel p:hover::first-line{
+        color: green;
+        font-size: 24px;
+    }
+    
+</style>
+<body>
+    <input type="text" name="text" value="" alt="text">
+    <input type="password" name="password" value="" alt="password">
+    <input type="button" value="Submit">
+    <h3>selector: nth-slector</h3>
+    <div class="nth-slector">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sed!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sed!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sed!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sed!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, sed!</p>
+    </div>
+    <h3>Pseudo selector: before-after, selection, placeholder, first-letter, first-line</h3>
+    <div class="ba-selector">
+        <h3>before-after</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptate ea non. Facere ducimus error officiis ab quibusdam similique odio voluptas? Suscipit praesentium itaque eligendi neque a quam cupiditate harum in aliquam laboriosam, nihil similique tenetur nulla. Impedit a et fugiat incidunt, nihil veniam omnis quidem quo? Qui, corrupti ab!</p>
+    </div>
+    <div class="selection-selector">
+        <h3>selection</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur adipisci ab, esse magni perferendis dolorem consequatur quis minima rem ea excepturi quo alias libero atque sequi expedita blanditiis exercitationem reprehenderit voluptatibus ratione? Iusto modi sed veritatis eveniet debitis saepe, consequatur libero omnis eum dolor inventore quae explicabo distinctio voluptatum necessitatibus.</p>
+    </div>
+    <div class="first-letter-sel">
+        <h3>first-letter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab adipisci voluptate repudiandae tempore nulla quos optio veniam corrupti cupiditate tenetur.</p>
+    </div>
+    <div class="first-line-sel">
+        <h3>first-line</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab adipisci voluptate repudiandae tempore nulla quos optio veniam corrupti cupiditate tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab adipisci voluptate repudiandae tempore nulla quos optio veniam corrupti cupiditate tenetur.</p>
+    </div>
+    
+</body>
+</html>
