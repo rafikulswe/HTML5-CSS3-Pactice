@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        h3 {
+            text-align: center;
+        }
+        .float-div-1, .float-div-2, .float-div-3{
+            border: 1px solid red;
+            width: 1000px;
+            margin: 30px auto;
+            display: flow-root;
+        }
+        .float-div-1 p:nth-child(1){
+            float: left;
+            border: 1px solid green;
+            padding: 20px;
+        }
+        .float-div-1 p:nth-child(2){
+            float: right;
+            border: 1px solid green;
+            padding: 20px;
+        }
+        .float-div-2 img{
+            float: left;
+            height: 100px;
+            width: 100px;
+        }
+        .float-div-2 p{
+            border: 3px solid green;
+            padding: 5px;
+        }
+        .float-div-3 p{
+            border: 3px solid green;
+            padding: 5px;
+        }
+        .float-div-3 img{
+            float: left;
+            height: 100px;
+            width: 100px;
+        }
+        .float-div-3 .clearfix{
+            /* overflow: auto; */
+            display: flow-root;
+        }
+    </style>
+</head>
+<body>
+    <h3>General example about Float</h3>
+    <div class="float-div-1">
+        <p>Float Left</p>
+        <p>Float Right</p>
+    </div>
+    <div class="float-div-2">
+        <p>
+            <img src="img/pineapple.jpg" alt="pineapple">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia maxime, id vero ipsa earum vel ab ducimus praesentium iste minima tenetur placeat architecto deleniti quasi dolorum illo, incidunt velit nemo sit, delectus illum. Quo fugit consequatur architecto, odit ratione tempora cumque harum ipsam consequuntur quia ex alias totam eius impedit.
+        </p>
+    </div>
+
+    <h3>Float with display:flow-root</h3>
+    <div class="float-div-3">
+        <p class="clearfix">
+            <img src="img/pineapple.jpg" alt="pineapple">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia maxime, id vero ipsa earum vel ab ducimus praesentium iste minima tenetur placeat architecto deleniti quasi dolorum illo, incidunt velit nemo sit, delectus illum. Quo fugit consequatur architecto, odit ratione tempora cumque harum ipsam consequuntur quia ex alias totam eius impedit.
+        </p>
+    </div>
+</body>
+</html>
