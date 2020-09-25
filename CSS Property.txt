@@ -1,0 +1,140 @@
+Color
+color: red/rgb(0, 0, 0)/rgba(255, 255, 255, 0.5)/#rrggbb/hsl(0, 50%, 100%)
+
+background
+background-color: lightblue;
+background-image: url("bgdesert.jpg");
+background-repeat: repeat-x/no-repeat;
+background-position: right top;
+background-attachment: fixed;
+background: #ffffff url("img_tree.png") no-repeat right top;
+
+border
+border-style: solid;
+border-width: 5px;
+border-width: 5px 20px;
+border-color: red;
+border: 5px solid red;
+border-left: 6px solid red;
+border-radius: 5px;
+
+margin
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
+margin: 25px 50px 75px 100px;
+margin: 25px 50px;
+
+padding
+padding-top: 50px;
+padding-right: 30px;
+padding-bottom: 50px;
+padding-left: 80px;
+padding: 10px 10px 10px 10px;
+padding: 10px 5px;
+
+height/width
+height: 200px;
+max-height: 500px;
+width: 50%;
+max-width: 500px;
+
+outline
+outline-style: solid;
+outline-color: red;
+outline-width: thin;
+outline: 5px solid yellow;
+outline-offset: 15px;
+border & outline works at a time and offset work between them
+
+text
+text-align: center;
+text-decoration: none/overline/line-through/underline; Note: for add/remove underline
+text-transform: uppercase/lowercase/capitalize;
+text-indent: 50px; Note: Start after 50px
+letter-spacing: 3px;
+word-spacing: 10px;
+white-space: nowrap;
+text-shadow: 2px 2px 5px red; Note: right down blur color
+
+font
+font-size: 40px;
+font-family: "Times New Roman", Times, serif/sans-serif/monospace;
+font-style: italic;
+font-weight: bold;
+font: 20px Arial, sans-serif;
+
+list
+list-style-type: circle;
+list-style-position: outside;
+list-style-image: url('sqpurple.gif');
+list-style: square inside url("sqpurple.gif");
+
+display
+display: none/inline/block;
+display: inline-block; Note: It set a width and height on the element + does not add a line-break after the element.
+display: flow-root; Note: Fit with the parents tag height. Behavior as like as clear overflow: auto.
+
+position
+position: static; Note: by default.
+position: relative; Note: need to define top,left,righ,bottom.
+position: fixed; Note: it always stays in the same place even if the page is scrolled.
+position: absolute; Note: it works depends the nearest positioned relative ancestor otherwise fixed in body.
+position: sticky; Note: It is positioned based on the user's scroll position
+left: 30px;
+right: 0;
+top: 0;
+bottom: 0;
+
+overflow
+overflow: visible;
+overflow: hidden;
+overflow: scroll;
+overflow: auto; Note: The auto value is similar to scroll
+overflow-x: hidden; /* Hide horizontal scrollbar */
+overflow-y: scroll; /* Add vertical scrollbar */
+
+float and clear
+float: none/left/right;
+overflow: auto; Note: scrollbar is added to see the rest of the content. opposite way is display: flow-root.
+box-sizing: border-box; Note: It allows us to include the padding and border in the box's total width and height.
+width: 33.33%;
+
+opacity
+opacity: 0.5; Note: 0->.5->1
+
+box
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+box-sizing: border-box; Note: It allows us to include the padding and border in the box's total width and height.
+
+
+
+selector
+div p{} Note: Descendant: selects all <p> elements inside <div> elements.
+div > p{} Note: Child: selects all <p> elements that are children of a <div> element.
+div + p{} Note: Adjacent Sibling: selects all <p> elements that are placed immediately after <div> elements.
+div ~ p{} Note: General Sibling: selects all <p> elements that are siblings of <div> elements.
+
+nth-selector:
+p:first-child;
+p:last-child;
+p:nth-child(3)
+
+Pseudo selector:
+a:link
+a:visited
+a:hover
+a:active
+
+Pseudo elements:
+p::before
+p::after
+p::selection
+p::first-line
+.scroll::-webkit-scrollbar
+.scroll::-webkit-scrollbar-track
+.scroll::-webkit-scrollbar-thumb
+to know more visit w3school css->pseud-class
+
+
