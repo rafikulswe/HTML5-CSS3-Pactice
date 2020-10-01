@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        /* START HEADER */
+        .header {
+            height: 70px;
+            width: 100%;
+            background:linear-gradient(90deg, #667db6 0%,#0082c8 33%,#0082c8 66%,#667db6 100% );;
+            padding: 15px;
+            border-bottom: 8px solid white;
+            text-align: center;
+        }
+        /* END HEADER */
+
+        /* START NAVBAR */
+        .navbar {
+            height: 50px;
+            width: 100%;
+            background:linear-gradient(90deg, #fc4a1a 0%,#f7b733 100% );
+            padding: 10px;
+            border-bottom: 8px solid white;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+        /* END NAVBAR */
+
+        /* START CONTAINER */
+        .container {
+            width: 100%;
+            height: 800px;
+            margin-bottom: 8px;
+        }
+        .container .left-content {
+            width: 25%;
+            height: 100%;
+            background:linear-gradient(90deg, #a1c4fd 0%,#c2e9fb 100% );
+            float: left;
+            border-right: 8px solid white;
+            text-align: center;
+        }
+        .container .main-content {
+            width: 50%;
+            height: 100%;
+            background:linear-gradient(90deg, #ffc3a0 0%,#ffafbd 100% );
+            float: left;
+            border-right: 8px solid white;
+            text-align: center;
+        }
+        .container .right-content {
+            width: 25%;
+            height: 100%;
+            background:linear-gradient(90deg, #a1c4fd 0%,#c2e9fb 100% );
+            float: left;
+            text-align: center;
+        }
+        /* END CONTAINER */
+
+        /*START FOOTER */
+        .footer {
+            padding: 18px;
+            text-align: center;
+            background:linear-gradient(90deg, #141e30 0%,#243b55 100% );
+        }
+        /*END FOOTER */
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="navbar">Navigation Bar</div>
+    <div class="container">
+        <div class="left-content">Left Content</div>
+        <div class="main-content">Main Content</div>
+        <div class="right-content">Right Content</div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>
