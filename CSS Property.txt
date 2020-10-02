@@ -3,7 +3,7 @@ color: red/rgb(0, 0, 0)/rgba(255, 255, 255, 0.5)/#rrggbb/hsl(0, 50%, 100%)
 
 background
 background-color: lightblue;
-background-image: url("bgdesert.jpg");
+background-image: url("bgdesert.jpg"); Note: we can add 2 bg-img too.In that case have to defind position of these img.
 background-repeat: repeat-x/no-repeat;
 background-position: right top;
 background-attachment: fixed;
@@ -16,10 +16,11 @@ border-width: 5px 20px;
 border-color: red;
 border: 5px solid red;
 border-left: 6px solid red;
+border-radius: 15px 50px 30px 5px; Note: first=top-left corner, second=top-right, third=bottom-right,fourth=bottom-left
 border-radius: 5px;
 
 box
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); Note: right down blur color
 box-sizing: border-box; Note: It allows us to include the padding and border in the box's total width and height.
 
 display
@@ -98,6 +99,24 @@ right: 0;
 top: 0;
 bottom: 0;
 
+transform
+transform: translate(50px, 100px);
+transform: rotate(20deg);
+transform: scaleX(2);
+transform: scaleY(2);
+transform: scale(2, 3);
+transform: skewX(20deg);
+transform: skewY(20deg);
+transform: skew(20deg, 10deg);
+transform: matrix();
+transition: width 2s, height 4s;
+transition: width 2s, height 2s, transform 2s; Note: Transition + Transformation
+transition-property: width;
+transition-duration: 2s;
+transition-timing-function: linear;
+transition-delay: 1s;
+transition: width 2s linear 1s; Note: property + duration + timing-function + delay
+
 text
 text-align: center;
 text-decoration: none/overline/line-through/underline; Note: for add/remove underline
@@ -107,6 +126,9 @@ letter-spacing: 3px;
 word-spacing: 10px;
 white-space: nowrap;
 text-shadow: 2px 2px 5px red; Note: right down blur color
+word-wrap: break-word;
+word-break: keep-all/break-all; Note: For break word in border line.
+writing-mode: horizontal-tb/vertical-rl;
 
 selector
 div p{} Note: Descendant: selects all <p> elements inside <div> elements.
