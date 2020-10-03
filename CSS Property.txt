@@ -41,6 +41,12 @@ overflow: auto; Note: scrollbar is added to see the rest of the content. opposit
 box-sizing: border-box; Note: It allows us to include the padding and border in the box's total width and height.
 width: 33.33%;
 
+flex 
+display: flex;
+flex-direction: row/column;
+flex-wrap: wrap;
+justify-content: center;
+
 height/width
 height: 200px;
 max-height: 500px;
@@ -98,6 +104,8 @@ left: 30px;
 right: 0;
 top: 0;
 bottom: 0;
+
+resize: both/vertical/horizontal; Note: div element is resizable by the user.
 
 transform
 transform: translate(50px, 100px);
