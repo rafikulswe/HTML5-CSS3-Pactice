@@ -1,4 +1,4 @@
-align-items
+align-items (only work after display:flex)
 align-items: flex-start; Note: Start vertical Top
 align-items: flex-end; Note: End vertical Bottom
 align-items: center; Note: Center vertical middle
@@ -62,7 +62,7 @@ max-height: 500px;
 width: 50%;
 max-width: 500px;
 
-justify-content
+justify-content (only work after display:flex)
 justify-content: flex-start; Note: Start horizontal left
 justify-content: flex-end; Note: End horizontal right
 justify-content: center; Note: Center horizontal middle
