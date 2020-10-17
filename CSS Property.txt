@@ -52,9 +52,11 @@ width: 33.33%;
 
 flex 
 display: flex;
-flex-direction: row/column;
-flex-wrap: wrap;
-justify-content: center;
+flex-direction: row/column/(r/c-reverse);
+flex-wrap: wrap; Note: used for data overflow
+flex-flow: direction wrap Note: Both in one
+justify-content: flex-start//center/flex-end/space-between/space-around/space-evenly; Note: Horizontally
+align-items: flex-start//center/flex-end/space-between/space-around/space-evenly; Note: Vertically
 
 height/width
 height: 200px;
